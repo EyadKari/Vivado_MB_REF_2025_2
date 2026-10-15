@@ -1,0 +1,519 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Oct 15 11:15:00 2026
+# Process ID         : 14637
+# Current directory  : /home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.runs/microblaze_reference_axi_smc_0_synth_1
+# Command line       : vivado -log microblaze_reference_axi_smc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microblaze_reference_axi_smc_0.tcl
+# Log file           : /home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.runs/microblaze_reference_axi_smc_0_synth_1/microblaze_reference_axi_smc_0.vds
+# Journal file       : /home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.runs/microblaze_reference_axi_smc_0_synth_1/vivado.jou
+# Running On         : FPGAbox
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-8600 CPU @ 3.10GHz
+# CPU Frequency      : 3096.010 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 6
+# Host memory        : 10341 MB
+# Swap memory        : 536 MB
+# Total Virtual      : 10878 MB
+# Available Virtual  : 4840 MB
+#-----------------------------------------------------------
+source microblaze_reference_axi_smc_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.516 ; gain = 103.059 ; free physical = 3007 ; free virtual = 4955
+Command: synth_design -top microblaze_reference_axi_smc_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15176
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2284.852 ; gain = 481.875 ; free physical = 207 ; free virtual = 2242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'microblaze_reference_axi_smc_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/synth/microblaze_reference_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_6X823K' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1098]
+INFO: [Synth 8-638] synthesizing module 'bd_7f1c_psr_aclk_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_1/synth/bd_7f1c_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_1/synth/bd_7f1c_psr_aclk_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/home/esr/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/home/esr/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/home/esr/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/home/esr/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:968]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/home/esr/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/home/esr/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/home/esr/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'bd_7f1c_psr_aclk_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_1/synth/bd_7f1c_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_7f1c_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1135]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_7f1c_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1135]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_7f1c_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1135]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_7f1c_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1135]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_7f1c_psr_aclk_0' has 10 connections declared, but only 6 given [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1135]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_6X823K' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1098]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1Q92YYJ' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1386]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m00e_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_32/synth/bd_7f1c_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/home/esr/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/home/esr/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m00e_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_32/synth/bd_7f1c_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1Q92YYJ' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1386]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_1CY46DZ' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1628]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m00arn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_27/synth/bd_7f1c_m00arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m00arn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_27/synth/bd_7f1c_m00arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m00awn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_29/synth/bd_7f1c_m00awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m00awn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_29/synth/bd_7f1c_m00awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m00bn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_31/synth/bd_7f1c_m00bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m00bn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_31/synth/bd_7f1c_m00bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m00rn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_28/synth/bd_7f1c_m00rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m00rn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_28/synth/bd_7f1c_m00rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m00wn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_30/synth/bd_7f1c_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m00wn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_30/synth/bd_7f1c_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_1CY46DZ' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1628]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m00s2a_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_26/synth/bd_7f1c_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m00s2a_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_26/synth/bd_7f1c_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_1WNQSOR' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1870]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m01e_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_39/synth/bd_7f1c_m01e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m01e_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_39/synth/bd_7f1c_m01e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_1WNQSOR' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1870]
+INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_CLIDK1' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:2112]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m01arn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_34/synth/bd_7f1c_m01arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m01arn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_34/synth/bd_7f1c_m01arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m01awn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_36/synth/bd_7f1c_m01awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m01awn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_36/synth/bd_7f1c_m01awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m01bn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_38/synth/bd_7f1c_m01bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m01bn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_38/synth/bd_7f1c_m01bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m01rn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_35/synth/bd_7f1c_m01rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m01rn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_35/synth/bd_7f1c_m01rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m01wn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_37/synth/bd_7f1c_m01wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m01wn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_37/synth/bd_7f1c_m01wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_CLIDK1' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:2112]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_m01s2a_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_33/synth/bd_7f1c_m01s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_m01s2a_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_33/synth/bd_7f1c_m01s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_s00a2s_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_20/synth/bd_7f1c_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_s00a2s_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_20/synth/bd_7f1c_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_RLH0MW' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:2354]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_s00mmu_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_17/synth/bd_7f1c_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_s00mmu_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_17/synth/bd_7f1c_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_s00sic_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_19/synth/bd_7f1c_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_s00sic_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_19/synth/bd_7f1c_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_s00tr_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_18/synth/bd_7f1c_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_s00tr_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_18/synth/bd_7f1c_s00tr_0.sv:53]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_7f1c_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:2753]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_7f1c_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:2753]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_7f1c_s00tr_0' has 82 connections declared, but only 80 given [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:2753]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_RLH0MW' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:2354]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_WYNSRM' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:2836]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_sarn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_21/synth/bd_7f1c_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_sarn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_21/synth/bd_7f1c_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_sawn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_23/synth/bd_7f1c_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_sawn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_23/synth/bd_7f1c_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_sbn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_25/synth/bd_7f1c_sbn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_sbn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_25/synth/bd_7f1c_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_srn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_22/synth/bd_7f1c_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_srn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_22/synth/bd_7f1c_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_swn_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_24/synth/bd_7f1c_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_swn_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_24/synth/bd_7f1c_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_WYNSRM' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:2836]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_83ZM9I' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:3078]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_arinsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_2/synth/bd_7f1c_arinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_arinsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_2/synth/bd_7f1c_arinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_aroutsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_7/synth/bd_7f1c_aroutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_aroutsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_7/synth/bd_7f1c_aroutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_awinsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_4/synth/bd_7f1c_awinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_awinsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_4/synth/bd_7f1c_awinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_awoutsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_9/synth/bd_7f1c_awoutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_awoutsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_9/synth/bd_7f1c_awoutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_binsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_6/synth/bd_7f1c_binsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_binsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_6/synth/bd_7f1c_binsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_boutsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_11/synth/bd_7f1c_boutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_boutsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_11/synth/bd_7f1c_boutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_1O8Q0CU' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1144]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_arni_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_12/synth/bd_7f1c_arni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_arni_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_12/synth/bd_7f1c_arni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_awni_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_14/synth/bd_7f1c_awni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_awni_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_14/synth/bd_7f1c_awni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_bni_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_16/synth/bd_7f1c_bni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_bni_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_16/synth/bd_7f1c_bni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_rni_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_13/synth/bd_7f1c_rni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_rni_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_13/synth/bd_7f1c_rni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_wni_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_15/synth/bd_7f1c_wni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_wni_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_15/synth/bd_7f1c_wni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_1O8Q0CU' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1144]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_rinsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_3/synth/bd_7f1c_rinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_rinsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_3/synth/bd_7f1c_rinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_routsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_8/synth/bd_7f1c_routsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_routsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_8/synth/bd_7f1c_routsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_winsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_5/synth/bd_7f1c_winsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_winsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_5/synth/bd_7f1c_winsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_7f1c_woutsw_0' [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_10/synth/bd_7f1c_woutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c_woutsw_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_10/synth/bd_7f1c_woutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_83ZM9I' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:3078]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7f1c' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_reference_axi_smc_0' (0#1) [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/synth/microblaze_reference_axi_smc_0.v:53]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_6X823K does not have driver. [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/synth/bd_7f1c.v:1118]
+INFO: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_9_top__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_9_top__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_9_top__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_9_top__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_9_top__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_9_top__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+INFO: [Synth 8-7129] Port slow_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+INFO: [Synth 8-7129] Port fast_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_node_v1_0_19_reg_slice3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_node_v1_0_19_reg_slice3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_node_v1_0_19_reg_slice3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_sc_req[0] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_sc_info[0] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tvalid in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[9] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[8] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[7] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[6] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[5] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[4] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[3] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[2] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[1] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[0] in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axis_arb_tready in module sc_node_v1_0_19_si_handler__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_sc_aclken in module sc_node_v1_0_19_top__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_node_v1_0_19_reg_slice3__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_node_v1_0_19_reg_slice3__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_node_v1_0_19_reg_slice3__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_node_v1_0_19_fi_regulator is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_sc_info[1] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_sc_info[0] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tvalid in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[9] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[8] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[7] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[6] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[5] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[4] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[3] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[2] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[1] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[0] in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axis_arb_tready in module sc_node_v1_0_19_si_handler__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_sc_aclken in module sc_node_v1_0_19_top__parameterized12 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_sc_info[1] in module sc_node_v1_0_19_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_sc_info[0] in module sc_node_v1_0_19_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tvalid in module sc_node_v1_0_19_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_19_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_19_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_19_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_19_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_19_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_19_si_handler__parameterized6 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2532.500 ; gain = 729.523 ; free physical = 218 ; free virtual = 1641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2532.500 ; gain = 729.523 ; free physical = 204 ; free virtual = 1633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2532.500 ; gain = 729.523 ; free physical = 204 ; free virtual = 1633
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2532.500 ; gain = 0.000 ; free physical = 132 ; free virtual = 1449
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_1/bd_7f1c_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/bd_0/ip/ip_1/bd_7f1c_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/smartconnect.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_axi_smc_0/smartconnect.xdc] for cell 'inst'
+Parsing XDC File [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.runs/microblaze_reference_axi_smc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.runs/microblaze_reference_axi_smc_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/esr/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/microblaze_reference_axi_smc_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/microblaze_reference_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 47 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2738.051 ; gain = 0.000 ; free physical = 287 ; free virtual = 1473
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2738.086 ; gain = 0.000 ; free physical = 287 ; free virtual = 1473
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:58 . Memory (MB): peak = 2738.086 ; gain = 935.109 ; free physical = 1754 ; free virtual = 2989
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:59 . Memory (MB): peak = 2746.055 ; gain = 943.078 ; free physical = 1753 ; free virtual = 2988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:59 . Memory (MB): peak = 2746.055 ; gain = 943.078 ; free physical = 1753 ; free virtual = 2988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.w_state_reg' in module 'sc_mmu_v1_0_16_top'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.r_state_reg' in module 'sc_mmu_v1_0_16_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 W_STALL |                               01 | 00000000000000000000000000000001
+               W_PENDING |                               10 | 00000000000000000000000000000010
+                W_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_16_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 R_STALL |                               01 | 00000000000000000000000000000001
+               R_PENDING |                               10 | 00000000000000000000000000000010
+                R_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.r_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_16_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:59 . Memory (MB): peak = 2746.055 ; gain = 943.078 ; free physical = 1687 ; free virtual = 2961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_7f1c.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_7f1c.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_7f1c.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_7f1c.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:01:06 . Memory (MB): peak = 2746.055 ; gain = 943.078 ; free physical = 1567 ; free virtual = 2885
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:07 . Memory (MB): peak = 2746.055 ; gain = 943.078 ; free physical = 1458 ; free virtual = 2883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:07 . Memory (MB): peak = 2746.055 ; gain = 943.078 ; free physical = 1446 ; free virtual = 2878
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:01:07 . Memory (MB): peak = 2746.055 ; gain = 943.078 ; free physical = 1365 ; free virtual = 2827
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:01:15 . Memory (MB): peak = 2859.867 ; gain = 1056.891 ; free physical = 932 ; free virtual = 2441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:01:15 . Memory (MB): peak = 2859.867 ; gain = 1056.891 ; free physical = 932 ; free virtual = 2441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:15 . Memory (MB): peak = 2859.867 ; gain = 1056.891 ; free physical = 932 ; free virtual = 2441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:15 . Memory (MB): peak = 2859.867 ; gain = 1056.891 ; free physical = 932 ; free virtual = 2441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:15 . Memory (MB): peak = 2859.867 ; gain = 1056.891 ; free physical = 932 ; free virtual = 2441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:15 . Memory (MB): peak = 2859.867 ; gain = 1056.891 ; free physical = 932 ; free virtual = 2441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |   126|
+|2     |LUT2  |    66|
+|3     |LUT3  |   131|
+|4     |LUT4  |    27|
+|5     |LUT5  |    50|
+|6     |LUT6  |    62|
+|7     |SRL16 |     1|
+|8     |FDCE  |   135|
+|9     |FDRE  |   306|
+|10    |FDSE  |    29|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:15 . Memory (MB): peak = 2859.867 ; gain = 1056.891 ; free physical = 932 ; free virtual = 2441
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:53 . Memory (MB): peak = 2859.867 ; gain = 851.305 ; free physical = 932 ; free virtual = 2441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:01:15 . Memory (MB): peak = 2859.875 ; gain = 1056.891 ; free physical = 934 ; free virtual = 2443
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00 . Memory (MB): peak = 2859.875 ; gain = 0.000 ; free physical = 1022 ; free virtual = 2531
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2899.887 ; gain = 0.000 ; free physical = 1028 ; free virtual = 2543
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: 3c809813
+INFO: [Common 17-83] Releasing license: Synthesis
+247 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:38 . Memory (MB): peak = 2899.922 ; gain = 1311.406 ; free physical = 1028 ; free virtual = 2543
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2079.950; main = 1870.170; forked = 237.934
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3863.199; main = 2899.891; forked = 1003.344
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2923.898 ; gain = 0.000 ; free physical = 1028 ; free virtual = 2543
+INFO: [Common 17-1381] The checkpoint '/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.runs/microblaze_reference_axi_smc_0_synth_1/microblaze_reference_axi_smc_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP microblaze_reference_axi_smc_0, cache-ID = c4e82d1b9279eb40
+INFO: [Coretcl 2-1174] Renamed 194 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2923.898 ; gain = 0.000 ; free physical = 1006 ; free virtual = 2531
+INFO: [Common 17-1381] The checkpoint '/home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.runs/microblaze_reference_axi_smc_0_synth_1/microblaze_reference_axi_smc_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file microblaze_reference_axi_smc_0_utilization_synth.rpt -pb microblaze_reference_axi_smc_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 15 11:18:07 2026...

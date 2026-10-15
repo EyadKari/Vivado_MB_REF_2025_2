@@ -1,0 +1,17 @@
+
+*** Running vivado
+    with args -log microblaze_reference_dlmb_v10_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source microblaze_reference_dlmb_v10_2.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Oct 15 11:15:00 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source microblaze_reference_dlmb_v10_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1586.516 ; gain = 101.059 ; free physical = 3007 ; free virtual = 4955
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP microblaze_reference_dlmb_v10_2, cache-ID = 43cdd83aed252ed8.
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 15 11:16:16 2026...

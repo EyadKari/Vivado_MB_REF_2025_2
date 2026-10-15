@@ -1,0 +1,54 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Thu Oct 15 11:22:46 2026
+| Host         : FPGAbox running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_methodology -file microblaze_reference_wrapper_methodology_drc_routed.rpt -pb microblaze_reference_wrapper_methodology_drc_routed.pb -rpx microblaze_reference_wrapper_methodology_drc_routed.rpx
+| Design       : microblaze_reference_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 3
++----------+----------+--------------------------------------------------------+--------+
+| Rule     | Severity | Description                                            | Checks |
++----------+----------+--------------------------------------------------------+--------+
+| LUTAR-1  | Warning  | LUT drives async reset alert                           | 1      |
+| TIMING-9 | Warning  | Unknown CDC Logic                                      | 1      |
+| XDCC-1   | Warning  | Scoped Clock constraint overwritten with the same name | 1      |
++----------+----------+--------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell microblaze_reference_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) microblaze_reference_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 8.000 -name sys_clock -waveform {0.000 4.000} -add [get_ports sys_clock] (Source: /home/esr/ESR_Projekte/Lab5/constraints/microblaze_reference_2025_2_microblaze.xdc (Line: 3))
+Previous: create_clock -period 8.000 [get_ports sys_clock] (Source: /home/esr/ESR_Projekte/Lab5/microblaze_reference_2025_2/microblaze_reference_2025_2.gen/sources_1/bd/microblaze_reference/ip/microblaze_reference_clk_wiz_1_2/microblaze_reference_clk_wiz_1_2.xdc (Line: 53))
+Related violations: <none>
+
+
