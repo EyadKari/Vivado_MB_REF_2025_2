@@ -1,0 +1,11 @@
+#.gitignore
+
+# baseline: everything
+*
+
+# not Vitis GUI setting "Don't ask about experimental GUI"
+!vitis_project/.metadata
+!vitis_project/.metadata/.plugins
+!vitis_project/.metadata/.plugins/org.eclipse.core.runtime
+!vitis_project/.metadata/.plugins/org.eclipse.core.runtime/.settings
+!vitis_project/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.xilinx.sdx.core.prefs
